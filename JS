@@ -1,0 +1,37 @@
+//This is the javascript for Assignment 6
+function triNumber (x){
+	var f =0;
+	var s = 0;
+	var tot;
+	for (i = 1; i<= x; i++){
+			tot =f + i;
+			f= tot;
+	}
+	return tot;
+	
+}
+var insert = prompt('please enter a number');
+var triNum = triNumber(insert);
+document.getElementById("output").innerHTML = triNum + ': is the corrosponding Triangular Number.';
+function fib (x){
+	var a = 1;
+	var b = 1;
+	var total;
+	//if (x === 1 || 2 ){
+	//total = 1;	
+	//}
+	//else {
+		for (i = 0; i< x-2; i++){
+		total = a + b;
+		a = b;
+		b = total;
+		console.log(total);
+		}
+	//}
+		if (total == undefined){
+		total = 1;	
+		}
+	return total;
+}
+var fibbonacci = fib(insert);
+document.getElementById("out").innerHTML = fibbonacci + ': is the corrosponding Fibonacci number.';
